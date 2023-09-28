@@ -1,0 +1,27 @@
+.h300 {
+    height: 300px;
+}
+
+.h400 {
+    height: 400px;
+}
+
+.h500 {
+    height: 500px;
+}
+
+.padding20 {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.cabecalho {
+    /* background-color: #011e3e; */
+    background: linear-gradient(to bottom, #011e3e, #2561a0);
+}
+
+.topicos {
+    background: linear-gradient(to bottom, #2561a0, #011e3e);
+}
