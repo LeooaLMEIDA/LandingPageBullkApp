@@ -25,3 +25,21 @@
 .topicos {
     background: linear-gradient(to bottom, #2561a0, #011e3e);
 }
+
+.accordion{
+    margin-left: 25%;
+}
+
+.black-image {
+    color: rgb(255, 255, 255);
+}
+
+.colorhover {
+    background-color: rgba(47, 66, 86, 0.5);
+    border-radius: 10px;
+}
+
+.backfoot {
+    background-color: rgba(47, 66, 86);
+    border-radius: 10px;
+}

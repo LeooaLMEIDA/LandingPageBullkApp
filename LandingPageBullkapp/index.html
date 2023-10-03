@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,9 @@
     <link rel="shortcut icon" href="assets/minotaur.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
+    <!-- Adicione um link para a biblioteca Font Awesome para ícones (opcional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-...." crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"
         defer></script>
@@ -18,92 +20,192 @@
 <body>
     <div class="container-fluid">
 
-        <div class="cabecalho h400 padding20 d-flex justify-content-center ">
+        <!-- Cabeçalho -->
+        <header class="cabecalho h-500 padding20 d-flex flex-column justify-content-center align-items-center"
+            style="background: linear-gradient(to bottom, #011e3e, #2561a0);">
             <img src="assets/Logo3.png" alt="Logo BullkApp" width="320" height="370">
-        </div>
+            <h1 class="text-white text-center">Bem-Vindo ao BullkApp</h1>
+            <p class="h3 text-white text-center">Transformando a Sua Experiência na Academia</p>
+            <!-- <a href="#" class="btn btn-primary btn-lg mt-3">Saiba Mais</a> -->
+        </header>
 
-        <div class="informacoes h500 ">
-            <p class="h1">Bem Vindo ao BullkApp</p>
-            <p class="h3">Este aplicativo foi desenvolvido com o objetivo de auxiliar a todos que frequentam alguma
-                academia, seguem alguns pontos que visamos ajudar:</p>
-
-            <div class="accordion col-6 align-self-center" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Sustentabilidade
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Ao substituir as fichas de treino impressas por uma aplicação digital, o aplicativo ajuda a
-                            reduzir o consumo de papel. Isso tem um impacto ambiental positivo, pois diminui a
-                            necessidade de recursos naturais para a produção de papel e reduz a quantidade de resíduos
-                            sólidos.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Eficiência
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            O aplicativo torna o processo de acompanhamento do treino mais eficiente, eliminando a
-                            necessidade de preencher e manter fichas em papel. Isso economiza tempo e recursos que
-                            seriam gastos na produção, distribuição e armazenamento dessas fichas.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Agilidade
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            A aplicação melhora a experiência do usuário final, proporcionando um acesso mais fácil e
-                            conveniente aos seus treinos e informações de avaliação. Isso incentiva a adesão e a
-                            participação dos alunos na academia, o que é benéfico para o negócio e para a
-                            sustentabilidade, pois evita a rotatividade de clientes.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-
-            </div>
-        </div>
-
-        <div>
-
+        <!-- Seção de Objetivo -->
+        <div class="objetivo bg-light text-dark p-5">
             <div class="container">
-
-                <div class="row justify-content-end text-start">
-
-                    <div class="col-9">
-
-                        <p class="h5">Uma aplicação mobile e web para potencializar a rotina de treinos dos alunos da
-                            academia.
-                            Facilitando a visualização do seu treino e sua evolução, reduzindo consumo de papel e
-                            evitando
-                            morosidade no processo de solicitação de avaliações. Dessa forma provendo uma melhor
-                            experiência
-                            do
-                            usuário.</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="display-4">1. Objetivo</h2>
+                        <p class="lead">
+                            Bem-vindo ao BullkApp, onde seus objetivos se tornam realidade! Nosso aplicativo foi criado
+                            com a
+                            missão de transformar sua experiência na academia e levá-lo um passo mais perto de alcançar
+                            seus
+                            objetivos de condicionamento físico.
+                        </p>
                     </div>
-
+                    <div class="col-md-6">
+                        <img src="assets/download.jpeg" height="500px" width="500px" alt="Objetivo BullkApp"
+                            class="img-fluid rounded-circle">
+                    </div>
                 </div>
-
             </div>
+        </div>
 
+        <!-- Seção de Escopo -->
+        <div class="escopo bg-primary text-light p-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="assets/images (1).jpeg" height="500px" width="500px" alt="Objetivo BullkApp"
+                            class="img-fluid rounded-circle">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="display-4">2. Escopo</h2>
+                        <p class="lead">
+                            O BullkApp vai além de um simples aplicativo de academia. É a solução definitiva para sua
+                            jornada de
+                            fitness. Nós capacitamos você a conquistar seus objetivos com facilidade, eficiência e
+                            sustentabilidade.
+                        </p>
+                        <p class="lead">
+                            Permita-nos apresentar a você a revolução na forma como você encara o treinamento.
+                            Oferecemos
+                            acompanhamento personalizado, vídeos de treinamento envolventes e recomendações
+                            inteligentes. Além
+                            disso, somos multiplataforma, atendendo às suas necessidades onde quer que você esteja -
+                            seja no
+                            aplicativo móvel ou na plataforma web.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section>
+
+            <p class="h3 text-black text-center padding20">Desenvolvemos este aplicativo para tornar sua jornada na
+                academia mais eficiente e sustentável.</p>
+        </section>
+
+        <!-- Seção de Benefícios -->
+        <section class="beneficios text-center my-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="fa fa-leaf fa-3x mb-3 text-primary"></i>
+                    <h3 class="text-primary">Sustentabilidade</h3>
+                    <p class="text-muted">Contribuímos para a preservação do meio ambiente ao eliminar o uso de papel.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fa-clock fa-3x mb-3 text-success"></i>
+                    <h3 class="text-success">Eficiência</h3>
+                    <p class="text-muted">Facilitamos o acompanhamento do treino, economizando tempo e recursos.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fa-tachometer fa-3x mb-3 text-info"></i>
+                    <h3 class="text-info">Agilidade</h3>
+                    <p class="text-muted">Melhoramos a experiência do usuário, incentivando a participação na academia.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Galeria de Exercícios -->
+        <div class="galeria-exercicios my-5">
+            <div class="container">
+                <h2 class="text-center">Exercícios Populares</h2>
+                <div class="row">
+                    <!-- Adicione mais exercícios aqui conforme necessário -->
+                    <div class="col-md-4">
+                        <div class="exercicio-card">
+                            <img src="assets/189.gif" alt="Exercício 1" class="img-fluid">
+                            <div class="exercicio-descricao">
+                                <h3>Hack</h3>
+                                <p>Posicione-se no aparelho, costas apoiadas, pés à largura dos
+                                    ombros e joelhos alinhados.
+                                    Mantenha a coluna reta, abdome contraído e segure os pegadores. Flexione os joelhos
+                                    até as
+                                    coxas ficarem paralelas à base e retorne à posição inicial. Repita.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="exercicio-card">
+                            <img src="assets/226.gif" alt="Exercício 2" class="img-fluid">
+                            <div class="exercicio-descricao">
+                                <h3>Tríceps Pulley</h3>
+                                <p>Conecte uma barra ao aparelho, segure-a com as mãos afastadas
+                                    na largura dos ombros. Mantenha
+                                    cotovelos próximos, tronco inclinado levemente à frente. Estenda os cotovelos,
+                                    focando no
+                                    tríceps. Volte à posição inicial e repita.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="exercicio-card">
+                            <img src="assets/356.gif" alt="Exercício 3" class="img-fluid">
+                            <div class="exercicio-descricao">
+                                <h3>Abdominal Infra nas Paralelas</h3>
+                                <p>Para o exercício, posicione-se de costas para o aparelho, com
+                                    os antebraços nas almofadas.
+                                    Mantenha postura correta, contraia o abdômen, puxe os joelhos para cima em direção
+                                    ao peito,
+                                    segure e retorne.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Origem da Ideia e Idealizadores -->
+        <div class="origem-idealizadores my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Origem da Ideia</h2>
+                        <p>A ideia para o BullkApp surgiu da busca por soluções inovadoras para
+                            melhorar a experiência na academia. Um dos nossos fundadores, Leonardo de Almeida, era um
+                            cliente e usuário anterior da antiga metodologia para realização de treinos.</p>
+                        <p>Leonardo experimentou em primeira mão as limitações dos métodos tradicionais de registro de
+                            treinos em papel. Frustrado com a falta de eficiência e o desperdício de papel, juntou nossa
+                            equipe para criar o BullkApp e transformar a forma como as pessoas encaram seus treinos na
+                            academia.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Idealizadores</h2>
+                        <div class="row">
+                            <div class="col-md-6 align-self-center text-center">
+                                <a href="https://www.linkedin.com/in/leonardo-almeida-11415a208/" target="_blank">
+                                    <img src="assets/367094959_2625258887640028_1033112023520778082_n.jpg"
+                                        alt="Leonardo de Almeida" width="100" height="100" class="rounded-circle">
+                                </a>
+                                <p><strong>Leonardo de Almeida</strong></p>
+                                <p class="text-center">Acadêmico de Análise e Desenvolvimento de Sistemas, Desenvolvedor
+                                    Progress Openedge 4GL.</p>
+                            </div>
+                            <div class="col-md-6 align-self-center text-center">
+                                <a href="https://www.linkedin.com/in/matheus-oliveira-pereira-275ab2115/"
+                                    target="_blank">
+                                    <img src="assets/Imagem do WhatsApp de 2023-10-03 à(s) 00.45.03_b195ab09.jpg"
+                                        alt="Matheus Oliveira Pereira" width="100" height="100" class="rounded-circle">
+                                </a>
+                                <p><strong>Matheus Oliveira Pereira</strong></p>
+                                <p class="text-center">Acadêmico de Análise e Desenvolvimento de Sistemas, Analista de
+                                    Dados e Desenvolvedor Python.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ... Outras Seções ... -->
+
+        <!-- Rodapé -->
+        <div class="rodape text-center backfoot text-bg-light">
+            <p>&copy; 2023 BullkApp - Todos os direitos reservados.</p>
         </div>
 
     </div>
